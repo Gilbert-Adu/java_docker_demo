@@ -1,7 +1,8 @@
 FROM node:18 AS build
 WORKDIR /app
 COPY . .
-RUN apt-get npm install && npm run build
+RUN npm install
+RUN npm run build
 
 #serve using nginx
 FROM nginx:alpine
