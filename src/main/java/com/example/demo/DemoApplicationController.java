@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping("/api")
 public class DemoApplicationController {
 
-    @CrossOrigin(origins = "http://localhost:5000")
+    @CrossOrigin(origins = "https://frontend-java-docker-demo.onrender.com")
     @GetMapping("/hello")
     public String sayHello() {
         return "Hello from the Java backend";
