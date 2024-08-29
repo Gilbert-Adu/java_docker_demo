@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const getString = async() => {
       try {
-        const response = await axios.get('http://localhost:8080/api/hello');
+        const response = await axios.get('https://backend-java-docker-demo.onrender.com/api/hello');
         setJavaData(response.data)
   
       }catch(err) {
